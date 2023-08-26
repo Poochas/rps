@@ -1,0 +1,81 @@
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 0;
+    margin: 0;
+    background: rgb(29,77,78);
+    background: linear-gradient(0deg, rgba(29,77,78,1) 0%, rgba(72,77,109,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: antiquewhite;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container p{
+    font-family: 'Tilt Prism', cursive;
+    margin-top: 1em;
+    text-align: center;
+    font-style: oblique;
+    font-size: 3em;
+    color: rgba(236, 214, 152, 0.562)
+}
+.iconContainer i{
+    padding: 0.1em;
+    border-style: groove;
+    border-radius: 20%;
+    background-color: dimgray;
+    /* background-color:lightblue; */
+    color: bisque; 
+}
+
+.players{
+    display: flex;
+    gap: 1.5em;
+}
+.players div{
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.players i {
+    visibility: hidden;
+}
+.round{
+    font-size: 2em;
+    margin: 1.2em;
+}
+#winner{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+#icons{
+    display: flex;
+    gap: 1.5em;
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+#retry{
+font-size: 4em;
+}
+
+.winner{
+    color:rgb(130, 190, 38);
+}
+.loser{
+    color:rgb(172, 13, 44);
+}
+.tie{
+    color:rgb(182, 158, 22);
+}
+
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
