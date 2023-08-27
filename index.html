@@ -8,45 +8,41 @@
   <script src="https://kit.fontawesome.com/660f009052.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Space+Grotesk:wght@500&family=Tilt+Prism&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;500&family=Space+Grotesk:wght@500&family=Tilt+Prism&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div class="container">
+  <div class="header">
     <p>Rock Paper Scissors</p>
-    <div class="players">
-      <div>
-        <i class="fa-solid fa-hand-back-fist fa-2x winner" id="playerSelection"></i>
-        <span>Player</span>
-        <span id="playerScore">0</span>
-      </div>
-      <div>
-        <i class="fa-solid fa-hand-back-fist fa-2x" id="computerSelection"></i>
-        <span>Machine</span>
-        <span id="computerScore">0</span>
-      </div>
-    </div>
-    <div class="round">
-      Round: 1
-    </div>
-    <div id="winner">
-      Choose your weapon
-    </div>
-    <div class="iconContainer">
-      <div id="icons">
+  </div>
+  <div class="container">
+    <div class="player">
+      <p>Human</p>
+      <div class="icons" id="playerIcons">
         <i class="fa-regular fa-hand-back-fist fa-2x" id="rock"></i>
         <i class="fa-regular fa-hand fa-2x" id="paper"></i>
         <i class="fa-regular fa-hand-scissors fa-rotate-90 fa-2x" id="scissors"></i>
       </div>
-      <div id="retry">
-        <i class="fa-solid fa-rotate-right" id="Retry"></i>
+    </div>
+    <div class="status">
+      <div class="round">Round: <span id="currentRound">1</span></div>
+      <div class="points">
+        <span id="playerScore">0</span> : <span id="computerScore">0</span>
+      </div>
+      <i class="fa-solid fa-rotate-right" id="retry"></i>
+      <ul id="log">
+      </ul>
+    </div>
+    <div class="computer">
+      <p>AI</p>
+      <div class="icons" id="computerIcons">
+        <i class="fa-regular fa-hand-back-fist fa-2x" id="rock"></i>
+        <i class="fa-regular fa-hand fa-2x" id="paper"></i>
+        <i class="fa-regular fa-hand-scissors fa-rotate-90 fa-2x" id="scissors"></i>
       </div>
     </div>
-    <ul id="log">
-    </ul>
-  </div>
   </div>
 </body>
 

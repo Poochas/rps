@@ -7,15 +7,46 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: antiquewhite;
-}
-.container{
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+.container{
+    max-width: 100%;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-between;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: flex-start;
+}
+.status{
+    width: 200px;
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-basis: 25%;
+    gap: 0.2em
+}
 
-.container p{
+i{
+    padding: 0.1em;
+    border-style: groove;
+    border-radius: 20%;
+    background-color: dimgray;
+    color: bisque; 
+}
+ 
+p{
     font-family: 'Tilt Prism', cursive;
     margin-top: 1em;
     text-align: center;
@@ -23,59 +54,40 @@ body{
     font-size: 3em;
     color: rgba(236, 214, 152, 0.562)
 }
-.iconContainer i{
-    padding: 0.1em;
-    border-style: groove;
-    border-radius: 20%;
-    background-color: dimgray;
-    /* background-color:lightblue; */
-    color: bisque; 
-}
-
-.players{
-    display: flex;
-    gap: 1.5em;
-}
-.players div{
+.container p{
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.players i {
-    visibility: hidden;
-}
-.round{
+} 
+.status{
     font-size: 2em;
-    margin: 1.2em;
-}
-#winner{
-    font-size: 1.5em;
-    margin-bottom: 1em;
-}
-#icons{
-    display: flex;
-    gap: 1.5em;
-    font-size: 2em;
-    margin-bottom: 2em;
+    font-family: 'Handjet', cursive;
 }
 #retry{
-font-size: 4em;
+    margin: 0.8em 0;
 }
-
+#log{
+    font-size: 0.5em;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 8em;
+    width: 100%;
+    font-weight: 300;
+}
+.endGame{
+    font-size: 1.2em;
+    font-weight:500;
+}
 .winner{
     color:rgb(130, 190, 38);
 }
 .loser{
     color:rgb(172, 13, 44);
-}
-.tie{
-    color:rgb(182, 158, 22);
+    transform: scale(0.9);
 }
 
-ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
-  }
+.player, .computer{
+    margin-top: 5em;
+    text-align: center;
+    width: 7em;
+}
